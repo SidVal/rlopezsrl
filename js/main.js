@@ -394,7 +394,7 @@
 
 
    /* AjaxChimp
-    * ------------------------------------------------------ */
+    * ------------------------------------------------------ 
     var clAjaxChimp = function() {
         
         $('#mc-form').ajaxChimp({
@@ -425,6 +425,7 @@
 
     };
 
+desabilito */
 
    /* Back to Top
     * ------------------------------------------------------ */
@@ -463,7 +464,7 @@
         clAlertBoxes();
         clContactForm();
         clAOS();
-        clAjaxChimp();
+        // clAjaxChimp();
         clBackToTop();
 
     })();
