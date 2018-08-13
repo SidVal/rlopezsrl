@@ -338,7 +338,7 @@
                 $.ajax({
     
                     type: "POST",
-                    url: "inc/sendEmail.php",
+                    url: "https://formspree.io/rodrigo@rlopezsrl.com",
                     data: $(form).serialize(),
                     beforeSend: function() { 
     
@@ -365,7 +365,7 @@
                     error: function() {
     
                         sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
+                        $('.message-warning').html("Algo no funcionó. Por favor prueba de nuevo o envíanos un email.");
                         $('.message-warning').slideDown("slow");
     
                     }
