@@ -266,13 +266,17 @@
                         <input name="contactName" type="text" id="contactName" placeholder="Tu nombre" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Tu correo electrónico" value="" required="" aria-required="true" class="full-width">
+                        <input name="_replyto" type="email" id="contactEmail" placeholder="Tu correo electrónico" value="" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
                         <input name="contactSubject" type="text" id="contactSubject" placeholder="Tema" value="" class="full-width">
                     </div>
                     <div class="form-field">
                         <textarea name="contactMessage" id="contactMessage" placeholder="Tu mensaje" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="hidden" name="_language" value="es" />
                     </div>
                     <div class="form-field">
                         <button class="full-width btn--primary">Enviar</button>
