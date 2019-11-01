@@ -1,2 +1,4 @@
+Sitemap: https://www.rlopezsrl.com/sitemap.xml
+
 User-agent: *
 Disallow:
