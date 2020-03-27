@@ -607,6 +607,10 @@ fieldset {
     border: none;
 }
 
+option {
+    color: #1a6f0b;
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -653,7 +657,6 @@ select {
 .cl-custom-select select option {
     padding-left: 2rem;
     padding-right: 2rem;
-    color: #1a6f0b;
 }
 
 .cl-custom-select select::-ms-expand {
