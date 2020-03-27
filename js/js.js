@@ -36,11 +36,13 @@ function ok() {
     var ok_nego = document.getElementById('negocio').value;
     var ok_conta = document.getElementById('contactMessage').value;
     var ok_tema = document.getElementById('contactSubject').value;
+    var saludo = "Hola Osvaldo, soy";
     var sp = " ";
-    var punto = ". "
+    var punto = ". ";
+    var comi = "'";
     var aparte = "\r\n\r\n";
-    var renglon = "\r\n"
-    var waStr = "Hola Osvaldo, soy"+ sp + name + punto + aparte +"Tengo negocio del tipo" + sp + "'" + ok_nego + "'" + punto + aparte + "Te escribo por" + sp + ok_tema + punto + renglon + ok_conta + punto;
+    var renglon = "\r\n";
+    var waStr = saludo + sp + name + punto + aparte + "Tengo negocio del tipo" + sp + comi + ok_nego + comi + punto + aparte + "Te escribo por" + sp + comi + ok_tema + comi + punto + renglon + ok_conta + punto;
     var mensaje = "https://wa.me/543512600009?text=" + encodeURIComponent(waStr);
     window.open(mensaje);
 }
