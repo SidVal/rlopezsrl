@@ -55,6 +55,7 @@
 </head>
 
 <body id="top">
+<script src="js/js.js"></script>
 
     <!-- header
     ================================================== -->
@@ -274,7 +275,41 @@
         <div class="row contact-content" data-aos="fade-up">
             
             <div class="contact-primary">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.8672744043956!2d-64.1115980050927!3d-31.39397064015462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943297d9688fa5b1%3A0xc33328efb96be880!2sRafael+L%C3%B3pez+S.R.L.!5e0!3m2!1ses-419!2sar!4v1550081577793" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+                 <h3 class="h6">Mandanos un mensaje</h3>
+
+                <form>
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Tu nombre" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                    <label for="section">Mi negocio:</label>
+                        <select name="negocio" id="negocio" required>
+                        <option value="" selected></option>                    
+                        <option value="Verduleria">Verdulería</option>
+                        <option value="Gastronomico-similar">Gastronomía o Similar</option>
+                        <option value="Productor">Productor</option>
+                        <option value="Consignatario">Consignatario</option>
+                        <option value="Impotador">Importador</option>
+                        <option value="Transporte">Transporte inter-provincias</option>
+                        <option value="Flete">Transporte tipo flete para repartos</option>
+                    </select>
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Tema" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Tu mensaje" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary" onclick="ok()">Enviar</button>
+                    </div>
+    
+                    </fieldset>
+                </form>
+                
             </div> <!-- end contact-primary -->
 
             <div class="contact-secondary">
