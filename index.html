@@ -64,6 +64,15 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
 
+    
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LfdYuQUAAAAADXPzGNHTmFmHrVKauhjsrxJBfz6"></script>
+<script>
+grecaptcha.ready(function() {
+grecaptcha.execute('6LfdYuQUAAAAADXPzGNHTmFmHrVKauhjsrxJBfz6', {action: 'check'})
+.then(function(token) {document.getElementById('g-recaptcha-response').value = token; });
+});
+</script>
 </head>
 
 <body id="top">
@@ -290,7 +299,9 @@
             
                  <h3 class="h6">Mandanos un mensaje</h3>
 
-                <form name="contactForm" id="contactForm">
+                <form action="#" method="POST" name="contactForm" id="contactForm">
+                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                    <input type="hidden" name="action" value="check">
                     <fieldset>
     
                     <div class="form-field">
