@@ -38,8 +38,8 @@
     
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     
     <style>
         .bs-calltoaction{
@@ -167,8 +167,7 @@
                             <h1 class="cta-title">Estás por solicitar nuestra lista de precios</h1>
                             <div class="cta-desc">
                                 <p>Estamos trabajando a toda hora para brindarte un mejor servicio</p>
-                                <p>Si no te respondemos inmediatamente, disculpanos</p>
-                                <p>Puedes enviar tus comentarios, sugerencias o críticas constructivas a nuestro correo electrónico: comercial@rlopezsrl.com</p>
+                                <p>Si no te respondemos inmediatamente, <i>discúlpanos</i></p>
                             </div>
                         </div>
                         <div class="col-md-3 cta-button">
@@ -188,7 +187,7 @@
     var aparte = "\r\n\r\n";
     var waStr = saludo + punto + aparte + "Quisiera la lista de precios de hoy si la tienes por favor" + punto;
     var mensaje = "https://wa.me/543512600009?text=" + encodeURIComponent(waStr);
-    setTimeout(() => window.open(mensaje), 2000); //timer de 2 segundos
+    window.open(mensaje); //timer de 2 segundos
 }</script>
 
 </body>
