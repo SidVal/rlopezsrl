@@ -7,4 +7,3 @@ function ventas() {
     var mensaje = "https://wa.me/543512600009?text=" + encodeURIComponent(waStr);
     window.open(mensaje);
 }
-© 2020 GitHub, Inc.
