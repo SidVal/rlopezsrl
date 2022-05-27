@@ -151,6 +151,564 @@
 .bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
     border-color:#fff;
 }
+        
+        /**
+ * Payment Methods Logos
+ * @authors: ndevalle, ipianciola, gandre, aramos, dudesl, sabustamante
+ * @description: common component for each country's payment methods logos.
+ * @version: 1.8.0
+ * Tomado desde https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264
+ */
+
+/* Common Structure
+---------------------------------------------------------------*/
+
+ .cx-main--MLA {
+     [class*='paymentmethod'] {
+         background-repeat: no-repeat;
+         display: inline-block;
+         margin: 2px;
+         overflow: hidden;
+         text-indent: 100%;
+         vertical-align: middle;
+         white-space: nowrap;
+     }
+ 
+     /* Common Payment Methods to all Contries
+     ---------------------------------------------------------------*/
+ 
+     .paymentmethod-account_money {
+         background-position: 0 0;
+     }
+ 
+     .paymentmethod-visa,
+     .paymentmethod-visa.paymentmethod-large {
+         background-position: 0 -49px;
+     }
+ 
+     .paymentmethod-debvisa {
+         background-position: 0px -1248px;
+     }
+ 
+     .paymentmethod-debvisa.paymentmethod-large {
+         background-position: 0 -1249px;
+     }
+ 
+     .paymentmethod-master,
+     .paymentmethod-master.paymentmethod-large {
+         background-position: 0 -100px;
+     }
+ 
+     .paymentmethod-debmaster {
+         background-position: 0 -1148px;
+     }
+ 
+     .paymentmethod-debmaster.paymentmethod-large {
+         background-position: 0 -1149px;
+     }
+ 
+     .paymentmethod-amex,
+     .paymentmethod-amex.paymentmethod-large {
+         background-position: 0 -150px;
+     }
+ 
+     .paymentmethod-bitcoin,
+     .paymentmethod-bitcoin.paymentmethod-large {
+         background-position: 0 -250px;
+     }
+ 
+     /* Sprite position for Argentina Logos
+     ---------------------------------------------------------------*/
+ 
+     .paymentmethod-diners,
+     .paymentmethod-diners.paymentmethod-large {
+         background-position: 0 -200px;
+     }
+ 
+     .paymentmethod-naranja,
+     .paymentmethod-naranja.paymentmethod-large {
+         background-position: 0 -300px;
+     }
+ 
+     .paymentmethod-nativa,
+     .paymentmethod-nativa.paymentmethod-large {
+         background-position: 0 -350px;
+     }
+ 
+     .paymentmethod-tarshop,
+     .paymentmethod-tarshop.paymentmethod-large {
+         background-position: 0 -400px;
+     }
+ 
+     .paymentmethod-cencosud,
+     .paymentmethod-cencosud.paymentmethod-large {
+         background-position: 0 -450px;
+     }
+ 
+     .paymentmethod-cabal,
+     .paymentmethod-cabal.paymentmethod-large {
+         background-position: 0 -500px;
+     }
+ 
+     .paymentmethod-debcabal {
+         background-position: 0px -1298px;
+     }
+ 
+     .paymentmethod-debcabal.paymentmethod-large {
+         background-position: 0 -1300px;
+     }
+ 
+     .paymentmethod-argencard,
+     .paymentmethod-argencard.paymentmethod-large {
+         background-position: 0 -550px;
+     }
+ 
+     .paymentmethod-pagofacil,
+     .paymentmethod-pagofacil.paymentmethod-large {
+         background-position: 0 -600px;
+     }
+ 
+     .paymentmethod-rapipago,
+     .paymentmethod-rapipago.paymentmethod-large {
+         background-position: 0 -650px;
+     }
+ 
+     .paymentmethod-redlink,
+     .paymentmethod-redlink.paymentmethod-large {
+         background-position: 0 -700px;
+     }
+ 
+     .paymentmethod-banelco,
+     .paymentmethod-banelco.paymentmethod-large {
+         background-position: 0 -750px;
+     }
+ 
+     .paymentmethod-bapropagos,
+     .paymentmethod-bapropagos.paymentmethod-large {
+         background-position: 0 -800px;
+     }
+ 
+     .paymentmethod-cargavirtual,
+     .paymentmethod-cargavirtual.paymentmethod-large {
+         background-position: 0 -849px;
+     }
+ 
+     .paymentmethod-cordial {
+         background-position: 0 -898px;
+     }
+ 
+     .paymentmethod-cordial.paymentmethod-large {
+         background-position: 0 -900px;
+     }
+ 
+     .paymentmethod-cmr,
+     .paymentmethod-cmr.paymentmethod-large {
+         background-position: 0 -949px;
+     }
+ 
+     .paymentmethod-cordobesa,
+     .paymentmethod-cordobesa.paymentmethod-large {
+         background-position: 0px -998px;
+     }
+ 
+     .paymentmethod-mercadopago_cc {
+         background-position: 0 -1047px;
+     }
+ 
+     .paymentmethod-mercadopago_cc.paymentmethod-large {
+         background-position: 0 -1049px;
+     }
+ 
+     .paymentmethod-consumer_credits {
+         background-position: 0 -1097px;
+     }
+ 
+     .paymentmethod-consumer_credits.paymentmethod-large {
+         background-position: 0 -1098px;
+     }
+ 
+     .paymentmethod-maestro {
+         background-position: 0 -1197px;
+     }
+ 
+     .paymentmethod-maestro.paymentmethod-large {
+         background-position: 0 -1199px;
+     }
+ 
+     .paymentmethod-patagonia365 {
+         background-position: 0 -1346px;
+     }
+ 
+     .paymentmethod-patagonia365.paymentmethod-large {
+         background-position: 0 -1346px;
+     }
+ 
+     .paymentmethod-nevada {
+         background-position: 0 -1396px;
+     }
+ 
+     .paymentmethod-nevada.paymentmethod-large {
+         background-position: 0 -1393px;
+     }
+ 
+     .paymentmethod-cobroexpress {
+         background-position: 0 -1448px;
+     }
+ 
+     .paymentmethod-cobroexpress.paymentmethod-large {
+         background-position: 0 -1444px;
+     }
+ 
+ 
+     /* Argentina Sprite for Default Size
+     ---------------------------------------------------------------*/
+ 
+ 
+     [class*='paymentmethod'] {
+         background-image: url('https://http2.mlstatic.com/secure/org-img/ui/payment-methods/1.8.0/ar/payment-methods-default.png');
+     }
+ 
+     /*
+      * Retina logo for small screens
+      */
+ 
+     @media (-webkit-min-device-pixel-ratio: 1.5),
+     (min-resolution: 144dpi),
+     (min-resolution: 1.5dppx) {
+ 
+         [class*='paymentmethod'] {
+             background-image: url('https://http2.mlstatic.com/secure/org-img/ui/payment-methods/1.8.0/ar/payment-methods-default@2x.png');
+             background-size: 72px 1498px;
+             /* original x1 image size */
+         }
+ 
+     }
+ 
+     /* Argentina Default Size
+     ---------------------------------------------------------------*/
+ 
+     .paymentmethod-account_money {
+         height: 20px;
+         width: 72px;
+     }
+ 
+     .paymentmethod-visa {
+         width: 39px;
+         height: 16px;
+     }
+ 
+     .paymentmethod-debvisa {
+         width: 58px;
+         height: 16px;
+     }
+ 
+     .paymentmethod-master {
+         height: 26px;
+         width: 30px;
+     }
+ 
+     .paymentmethod-debmaster {
+         height: 26px;
+         width: 49px;
+     }
+ 
+     .paymentmethod-amex {
+         height: 17px;
+         width: 17px;
+     }
+ 
+     .paymentmethod-diners {
+         height: 16px;
+         width: 62px;
+     }
+ 
+     .paymentmethod-bitcoin {
+         height: 16px;
+         width: 62px;
+     }
+ 
+     .paymentmethod-naranja {
+         height: 22px;
+         width: 16px;
+     }
+ 
+     .paymentmethod-nativa {
+         height: 15px;
+         width: 36px;
+     }
+ 
+     .paymentmethod-tarshop {
+         width: 27px;
+         height: 16px;
+     }
+ 
+     .paymentmethod-cencosud {
+         height: 17px;
+         width: 26px;
+     }
+ 
+     .paymentmethod-cabal {
+         height: 17px;
+         width: 52px;
+     }
+ 
+     .paymentmethod-debcabal {
+         height: 24px;
+         width: 52px;
+     }
+ 
+     .paymentmethod-argencard {
+         height: 18px;
+         width: 17px;
+     }
+ 
+     .paymentmethod-pagofacil,
+     .paymentmethod-redlink {
+         height: 20px;
+         width: 19px;
+     }
+ 
+     .paymentmethod-rapipago {
+         height: 11px;
+         width: 56px;
+     }
+ 
+     .paymentmethod-banelco {
+         width: 46px;
+         height: 16px;
+     }
+ 
+     .paymentmethod-bapropagos {
+         width: 54px;
+         height: 24px;
+     }
+ 
+     .paymentmethod-cargavirtual {
+         height: 20px;
+         width: 20px;
+     }
+ 
+     .paymentmethod-cordial {
+         height: 21px;
+         width: 30px;
+     }
+ 
+     .paymentmethod-cmr {
+         height: 19px;
+         width: 26px;
+     }
+ 
+     .paymentmethod-cordobesa {
+         height: 10px;
+         width: 40px;
+     }
+ 
+     .paymentmethod-mercadopago_cc {
+         height: 20px;
+         width: 30px;
+     }
+ 
+     .paymentmethod-consumer_credits {
+         height: 20px;
+         width: 74px;
+     }
+ 
+     .paymentmethod-maestro {
+         height: 25px;
+         width: 30px;
+     }
+ 
+     .paymentmethod-patagonia365 {
+         height: 10px;
+         width: 73px;
+     }
+ 
+     .paymentmethod-nevada {
+         height: 20px;
+         width: 25px;
+     }
+ 
+     .paymentmethod-cobroexpress {
+         height: 16px;
+         width: 58px;
+     }
+ 
+     /* Argentina Sprite for Large Size
+     ---------------------------------------------------------------*/
+ 
+ 
+     .paymentmethod-large {
+         background-image: url('https://http2.mlstatic.com/secure/org-img/ui/payment-methods/1.8.0/ar/payment-methods-large.png');
+         margin: 5px;
+     }
+ 
+     /*
+      * Retina logo for small screens
+      */
+ 
+     @media (-webkit-min-device-pixel-ratio: 1.5),
+     (min-resolution: 144dpi),
+     (min-resolution: 1.5dppx) {
+ 
+         .paymentmethod-large {
+             background-image: url('https://http2.mlstatic.com/secure/org-img/ui/payment-methods/1.8.0/ar/payment-methods-large@2x.png');
+             background-size: 116px 1494px;
+             /* original x1 image size */
+             margin: 5px;
+         }
+ 
+     }
+ 
+     /* Argentina Large Size
+     ---------------------------------------------------------------*/
+ 
+     .paymentmethod-account_money.paymentmethod-large {
+         height: 31px;
+         width: 116px;
+     }
+ 
+     .paymentmethod-visa.paymentmethod-large {
+         height: 21px;
+         width: 63px;
+     }
+ 
+     .paymentmethod-debvisa.paymentmethod-large {
+         height: 21px;
+         width: 92px;
+     }
+ 
+     .paymentmethod-master.paymentmethod-large {
+         height: 36px;
+         width: 46px;
+     }
+ 
+     .paymentmethod-debmaster.paymentmethod-large {
+         height: 36px;
+         width: 75px;
+     }
+ 
+     .paymentmethod-amex.paymentmethod-large {
+         height: 28px;
+         width: 28px;
+     }
+ 
+     .paymentmethod-diners.paymentmethod-large {
+         height: 28px;
+         width: 96px;
+     }
+ 
+     .paymentmethod-bitcoin.paymentmethod-large {
+         height: 25px;
+         width: 96px;
+     }
+ 
+     .paymentmethod-naranja.paymentmethod-large {
+         height: 34px;
+         width: 24px;
+     }
+ 
+     .paymentmethod-nativa.paymentmethod-large {
+         width: 58px;
+         height: 27px;
+     }
+ 
+     .paymentmethod-tarshop.paymentmethod-large {
+         width: 42px;
+         height: 27px;
+     }
+ 
+     .paymentmethod-cencosud.paymentmethod-large {
+         width: 41px;
+         height: 27px;
+     }
+ 
+     .paymentmethod-cabal.paymentmethod-large {
+         width: 80px;
+         height: 28px;
+     }
+ 
+     .paymentmethod-debcabal.paymentmethod-large {
+         width: 80px;
+         height: 35px;
+     }
+ 
+     .paymentmethod-argencard.paymentmethod-large {
+         height: 28px;
+         width: 28px;
+     }
+ 
+     .paymentmethod-pagofacil.paymentmethod-large,
+     .paymentmethod-redlink.paymentmethod-large {
+         height: 31px;
+         width: 31px;
+     }
+ 
+     .paymentmethod-rapipago.paymentmethod-large {
+         height: 18px;
+         width: 86px;
+     }
+ 
+     .paymentmethod-banelco.paymentmethod-large {
+         height: 25px;
+         width: 74px;
+     }
+ 
+     .paymentmethod-bapropagos.paymentmethod-large {
+         width: 86px;
+         height: 36px;
+     }
+ 
+     .paymentmethod-cargavirtual.paymentmethod-large {
+         height: 33px;
+         width: 32px;
+     }
+ 
+     .paymentmethod-cordial.paymentmethod-large {
+         height: 25px;
+         width: 38px;
+     }
+ 
+     .paymentmethod-cmr.paymentmethod-large {
+         height: 31px;
+         width: 42px;
+     }
+ 
+     .paymentmethod-cordobesa.paymentmethod-large {
+         height: 25px;
+         width: 64px;
+     }
+ 
+     .paymentmethod-mercadopago_cc.paymentmethod-large {
+         height: 27px;
+         width: 38px;
+     }
+ 
+     .paymentmethod-consumer_credits.paymentmethod-large {
+         height: 32px;
+         width: 116px;
+     }
+ 
+     .paymentmethod-maestro.paymentmethod-large {
+         height: 38px;
+         width: 44px;
+     }
+ 
+     .paymentmethod-patagonia365.paymentmethod-large {
+         height: 16px;
+         width: 116px;
+     }
+ 
+     .paymentmethod-nevada.paymentmethod-large {
+         height: 28px;
+         width: 38px;
+     }
+ 
+     .paymentmethod-cobroexpress.paymentmethod-large {
+         height: 28px;
+         width: 102px;
+     }
+ }
+        
     </style>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -168,6 +726,38 @@
                             <div class="cta-desc">
                                 <p>Estamos trabajando a toda hora para brindarte un mejor servicio</p>
                                 <p>Si no te respondemos inmediatamente, <i>discúlpanos</i></p>
+                                <br /><br />
+                                <h2>Medios de pago</h2>
+                                <p>Coordinar todo por Whatsapp, así le brindamos el mejor servicio de acuerdo a sus preferencias</p>
+                                <h3>Tarjeta de crédito en hasta 12 cuotas</h3>
+                                <ul>
+                                    <li class="paymentmethod-visa paymentmethod-large">Visa</li>
+                                    <li class="paymentmethod-master paymentmethod-large">Mastercard</li>
+                                    <li class="paymentmethod-amex paymentmethod-large">American Express</li>
+                                    <li class="paymentmethod-naranja paymentmethod-large">Naranja</li>
+                                    <li class="paymentmethod-tarshop paymentmethod-large">Tarjeta Shopping</li>
+                                    <li class="paymentmethod-nativa paymentmethod-large">Nativa</li>
+                                    <li class="paymentmethod-cencosud paymentmethod-large">Cencosud</li>
+                                    <li class="paymentmethod-cabal paymentmethod-large">Cabal</li>
+                                    <li class="paymentmethod-argencard paymentmethod-large">Argencard</li>
+                                    <li class="paymentmethod-diners paymentmethod-large">Diners</li>
+                                    <li class="paymentmethod-cordobesa paymentmethod-large">Cordobesa</li>
+                                    <li class="paymentmethod-cmr paymentmethod-large">CMR</li>
+                                    <li class="paymentmethod-cordial paymentmethod-large">Cordial</li>
+                                    </ul>
+                            <h3>Tarjeta de débito</h3>
+                                    <ul>
+                                    <li class="paymentmethod-debvisa paymentmethod-large">Visa Débito</li>
+                                    <li class="paymentmethod-debmaster paymentmethod-large">Mastercard Débito</li>
+                                    <li class="paymentmethod-maestro paymentmethod-large">Maestro</li>
+                                    <li class="paymentmethod-debcabal paymentmethod-large">Cabal Débito</li>
+                                    </ul>
+                            <h3>En efectivo</h3>
+                                    <ul>
+                                    <li class="paymentmethod-pagofacil paymentmethod-large">Pago Fácil</li>
+                                    <li class="paymentmethod-rapipago paymentmethod-large">Rapipago</li>
+                                    </ul>
+                            <h3>Con MercadoPago o transferencia bancaria</h3>
                             </div>
                         </div>
                         <div class="col-md-3 cta-button">
