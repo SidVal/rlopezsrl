@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .column-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .column button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Título de la Página</h1>
+    <h2>Subtítulo de la Página</h2>
+</header>
+
+<div class="container">
+    <div class="intro">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+    </div>
+
+    <div class="column-container">
+        <div class="column">
+            <h3>Sección 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum.</p>
+            <button onclick="window.location.href='https://example.com/1'">Llamada a la Acción 1</button>
+        </div>
+        <div class="column">
+            <h3>Sección 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum.</p>
+            <button onclick="window.location.href='https://example.com/2'">Llamada a la Acción 2</button>
+        </div>
+        <div class="column">
+            <h3>Sección 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum.</p>
+            <button onclick="window.location.href='https://example.com/3'">Llamada a la Acción 3</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Tu Compañía. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
