@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-     <!--- basic page needs
-    ================================================== -->
+     <!--- basic page needs ================================================== -->
     <meta charset="utf-8">
     <title>Rafael López S.R.L. - Frutas y Verduras</title>
     <meta name="author" content="Osvaldo López">
@@ -26,19 +24,12 @@
     <meta name="fb:admins" content="754013463">
     <meta name="fb:app_id" content="2413056505592298">
     <meta name="og:type" content="website">
-
-    <!-- mobile specific metas
-    ================================================== -->
+    <!-- mobile specific metas ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- favicons
-    ================================================== -->
+    <!-- favicons ================================================== -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-     
-    <!-- CSS
-    ================================================== -->
-    
+    <!-- CSS ================================================== -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,40 +38,28 @@
             background-color: #f4f4f4;
             color: #333;
         }
-
         header {
             background-color: #4CAF50;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
-
         .container {
             padding: 20px;
         }
-
         .intro {
             text-align: center;
             margin-bottom: 20px;
             padding: 10px;
         }
-
-        .column-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
         .column {
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 20px;
-            width: 45%;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
             margin-bottom: 20px;
         }
-
         .column button {
             background-color: #4CAF50;
             border: none;
@@ -94,11 +73,9 @@
             cursor: pointer;
             border-radius: 4px;
         }
-
         .form-container {
             text-align: left;
         }
-
         .form-container input, .form-container select, .form-container textarea {
             width: 90%;
             padding: 10px;
@@ -106,85 +83,65 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
         }
-
-        @media (max-width: 768px) {
-            .column {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
-
 <header>
     <h1>RAFAEL LOPEZ SRL</h1>
     <h2>Puestos 16 y 18 - Nave 8 - Mercado de Abasto - Córdoba Argentina</h2>
 </header>
-
 <div class="container">
     <div class="intro">
         <p>Comercio fruti-hortícola, venta de frutas y hortalizas de la mejor calidad y con la mejor atención.
-        <br />Hace más de 50 años que somos parte del Mercado de Abasto de Córdoba, nuestra firma es una marca registrada de confianza, tanto para productores como para nuestros clientes.
+            <br />Hace más de 50 años que somos parte del Mercado de Abasto de Córdoba, nuestra firma es una marca registrada de confianza, tanto para productores como para nuestros clientes.
         </p>
-
         <p>
-    <strong>QUÉ HACEMOS</strong><br />
-Comercializamos la mejor fruta y verdura del mercado. Desde los inicios del "Mercado de Abasto", nuestro puesto forma parte del grupo de operadores. <br /><br />Somos un grupo familiar de tercera generación en la prestación del servicio como consignatario, comerciante de frutas y hortalizas.
-            
+            <strong>QUÉ HACEMOS</strong><br />
+            Comercializamos la mejor fruta y verdura del mercado. Desde los inicios del "Mercado de Abasto", nuestro puesto forma parte del grupo de operadores. <br /><br />Somos un grupo familiar de tercera generación en la prestación del servicio como consignatario, comerciante de frutas y hortalizas.
         </p>
     </div>
-
-    <div class="column-container">
-        <div class="column">
-            <h3>Compra nuestros productos</h3>
-            <p>Si tienes <strong>negocio del rubro FRUTI-HORTÍCOLA</strong>, puede ser verdulería, reparto-distribuidor, restaurantes, bares, minimercados/supermercados, kioskos y un gran etcétera; sumate a nuestra lista de clientes ahora para sumar puntos con cada una de tus compras y obtener importantes beneficios.</p>
-            <button onclick="window.location.href='https://example.com/1'">SOY COMPRADOR</button>
-             <br /><br />
-            <div class="form-container">
-                <form>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" maxlength="100" data-name="Nombre" name="Nombre" placeholder="Tu nombre" required>
-
-                     <br />
-                    <label for="Telefono">Whatsapp</label>
-                    <input type="number" maxlength="100" data-name="Telefono" id="Telefono" name="Telefono" required>
-
-                     <br />
-                    <label for="business-type">Tipo de Negocio</label>
-                    <select id="business-type" name="business-type" required>
-                        <option value="restobar">Resto/bar</option>
-                        <option value="verduleria">Verdulería</option>
-                        <option value="reparto">Reparto/Distribuidor</option>
-                        <option value="otro">Otro</option>
-                    </select>
-
-                     <br />
-                    <label for="zone">Zona/Barrio</label>
-                    <input type="text" id="zone" name="zone" required>
-                    
-                     <br />
-                    <label for="Consulta">Tu mensaje</label>
-                    <textarea id="Consulta" data-name="Consulta" name="Consulta" rows="4" required></textarea>
-                    
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+    <div class="column">
+        <h3>Compra nuestros productos</h3>
+        <p>Si tienes <strong>negocio del rubro FRUTI-HORTÍCOLA</strong>, puede ser verdulería, reparto-distribuidor, restaurantes, bares, minimercados/supermercados, kioskos y un gran etcétera; sumate a nuestra lista de clientes ahora para sumar puntos con cada una de tus compras y obtener importantes beneficios.</p>
+        <button onclick="window.location.href='https://example.com/1'">SOY COMPRADOR</button>
+        <br /><br />
+        <div class="form-container">
+            <form>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" maxlength="100" data-name="Nombre" name="Nombre" placeholder="Tu nombre" required>
+                <br />
+                <label for="Telefono">Whatsapp</label>
+                <input type="number" maxlength="100" data-name="Telefono" id="Telefono" name="Telefono" required>
+                <br />
+                <label for="business-type">Tipo de Negocio</label>
+                <select id="business-type" name="business-type" required>
+                    <option value="restobar">Resto/bar</option>
+                    <option value="verduleria">Verdulería</option>
+                    <option value="reparto">Reparto/Distribuidor</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br />
+                <label for="zone">Zona/Barrio</label>
+                <input type="text" id="zone" name="zone" required>
+                <br />
+                <label for="Consulta">Tu mensaje</label>
+                <textarea id="Consulta" data-name="Consulta" name="Consulta" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <div class="column">
-            <h3>Vendemos tus productos</h3>
-            <p>Sumá tus productos a nuestra <b>lista de frutas y verduras</b> para vender todos los días.</p>
-            <button onclick="window.location.href='https://example.com/2'">SOY PRODUCTOR</button>
-        </div>
+    </div>
+    <div class="column">
+        <h3>Vendemos tus productos</h3>
+        <p>Sumá tus productos a nuestra <b>lista de frutas y verduras</b> para vender todos los días.</p>
+        <button onclick="window.location.href='https://example.com/2'">SOY PRODUCTOR</button>
     </div>
 </div>
-
 <div class="container">
     <div class="intro">
         <h3>Dónde encontrarnos</h3>
@@ -198,10 +155,8 @@ Comercializamos la mejor fruta y verdura del mercado. Desde los inicios del "Mer
         </p>
     </div>
 </div>
-
 <footer>
     <p>© 2024 RAFAEL LOPEZ SRL - Todos los derechos reservados.</p>
 </footer>
-
 </body>
 </html>
