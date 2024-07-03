@@ -95,6 +95,18 @@
             border-radius: 4px;
         }
 
+        .form-container {
+            text-align: left;
+        }
+
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -134,6 +146,32 @@ Comercializamos la mejor fruta y verdura del mercado. Desde los inicios del "Mer
             <h3>Compra nuestros productos</h3>
             <p>Si tienes <strong>negocio del rubro FRUTI-HORTÍCOLA</strong>, puede ser verdulería, reparto-distribuidor, restaurantes, bares, minimercados/supermercados, kioskos y un gran etcétera; sumate a nuestra lista de clientes ahora para sumar puntos con cada una de tus compras y obtener importantes beneficios.</p>
             <button onclick="window.location.href='https://example.com/1'">SOY COMPRADOR</button>
+             <br /><br />
+            <div class="form-container">
+                <form>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="whatsapp">Whatsapp</label>
+                    <input type="number" id="whatsapp" name="whatsapp" required>
+                    
+                    <label for="business-type">Tipo de Negocio</label>
+                    <select id="business-type" name="business-type" required>
+                        <option value="restobar">Resto/bar</option>
+                        <option value="verduleria">Verdulería</option>
+                        <option value="reparto">Reparto/Distribuidor</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    
+                    <label for="zone">Zona/Barrio</label>
+                    <input type="text" id="zone" name="zone" required>
+                    
+                    <label for="message">Tu mensaje</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
         <div class="column">
             <h3>Vendemos tus productos</h3>
@@ -141,22 +179,22 @@ Comercializamos la mejor fruta y verdura del mercado. Desde los inicios del "Mer
             <button onclick="window.location.href='https://example.com/2'">SOY PRODUCTOR</button>
         </div>
     </div>
+</div>
 
-
-    <div class="container">
+<div class="container">
     <div class="intro">
+        <h3>Dónde encontrarnos</h3>
         <p>
-           <h3>Dónde encontrarnos</h3>
-Nave 8 - Puesto 816/818<br />
-Mercado de Abasto<br />
-Av. de la Semilleria s/n,<br />
-5000 Córdoba<br />
-Argentina<br />
-<a href="https://www.google.com.ar/maps/place/Rafael+L%C3%B3pez+S.R.L./@-31.3932136,-64.1114804,537m/data=!3m1!1e3!4m5!3m4!1s0x943297d9688fa5b1:0xc33328efb96be880!8m2!3d-31.3939308!4d-64.1097456" title="Google Maps: Rafael López SRL">Ver cómo llegar a "Rafael López SRL" con Mapas de Google</a>
+            Nave 8 - Puesto 816/818<br />
+            Mercado de Abasto<br />
+            Av. de la Semilleria s/n,<br />
+            5000 Córdoba<br />
+            Argentina<br />
+            <a href="https://www.google.com.ar/maps/place/Rafael+L%C3%B3pez+S.R.L./@-31.3932136,-64.1114804,537m/data=!3m1!1e3!4m5!3m4!1s0x943297d9688fa5b1:0xc33328efb96be880!8m2!3d-31.3939308!4d-64.1097456" title="Google Maps: Rafael López SRL">Ver cómo llegar a "Rafael López SRL" con Mapas de Google</a>
         </p>
     </div>
-
 </div>
+
 <footer>
     <p>© 2024 RAFAEL LOPEZ SRL - Todos los derechos reservados.</p>
 </footer>
