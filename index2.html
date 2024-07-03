@@ -73,17 +73,40 @@
             cursor: pointer;
             border-radius: 4px;
         }
-        .form-container {
-            text-align: left;
-        }
-        .form-container input, .form-container select, .form-container textarea {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        footer {
+         
+     .form-container {
+         max-width: 500px;
+         margin: 0 auto;
+         text-align: left;
+         padding: 20px;
+         background-color: #f9f9f9;
+         border-radius: 8px;
+         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+     }
+     
+     .form-container input, .form-container select, .form-container textarea {
+         width: 100%;
+         padding: 10px;
+         margin: 10px 0;
+         border: 1px solid #ddd;
+         border-radius: 4px;
+     }
+     
+     .form-container button {
+         width: 100%;
+         padding: 10px;
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         font-size: 16px;
+         cursor: pointer;
+         border-radius: 4px;
+     }
+     
+     .form-container button:hover {
+         background-color: #45a049;
+     }
+         footer {
             background-color: #333;
             color: white;
             text-align: center;
