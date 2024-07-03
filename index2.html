@@ -85,17 +85,17 @@
      }
      
      .form-container input, .form-container select, .form-container textarea {
-         width: 100%;
+         width: 90%;
          padding: 10px;
          margin: 10px 0;
          border: 1px solid #ddd;
-         border-radius: 4px;
+         border-radius: 8px;
      }
      
      .form-container button {
          width: 100%;
          padding: 10px;
-         background-color: #4CAF50;
+         background-color: #2b6a2d;
          border: none;
          color: white;
          font-size: 16px;
@@ -144,6 +144,7 @@
                 <br />
                 <label for="business-type">Tipo de Negocio</label><br />
                 <select id="business-type" placeholder="" name="business-type" required>
+                    <option value="" disabled selected>Selecciona tu tipo de negocio</option>
                     <option value="restobar">Resto/bar</option>
                     <option value="verduleria">Verdulería</option>
                     <option value="reparto">Reparto/Distribuidor</option>
