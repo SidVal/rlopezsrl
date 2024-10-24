@@ -16,7 +16,7 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 
-  <script>
+<script>
     document.getElementById('email-form').addEventListener('submit', function(event) {
         event.preventDefault();  // Prevenir el envío por defecto del formulario
 
@@ -34,17 +34,21 @@
         // Crear el mensaje preformateado
         var mensaje = `Hola, soy ${nombre}.%0A
                       Prefijo y Teléfono: ${prefijo} ${telefono}%0A
-                      Email: ${email}%0A
                       Tipo de negocio: ${negocio}%0A
                       Consulta: ${consulta}`;
 
         // URL de WhatsApp con el mensaje preformateado
         var url = `https://wa.me/${numeroDestino}?text=${mensaje}`;
 
-        // Redirigir a WhatsApp
-        window.open(url, '_blank');
+        // Crear un enlace temporal y simular el clic para abrir la URL en una nueva pestaña
+        var a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';  // Esto ayuda a mantener seguridad y no dar acceso a la página anterior
+        a.click();
     });
 </script>
+
   
 </head>
 <body>
