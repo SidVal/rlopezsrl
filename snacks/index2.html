@@ -20,9 +20,7 @@
 <body>
 
   <script>
-    document.getElementById('email-form').addEventListener('submit', function(event) {
-        event.preventDefault();  // Prevenir el envío por defecto del formulario
-
+    function enviarConsulta() {
         // Obtener los valores del formulario
         var nombre = document.getElementById('Nombre').value;
         var prefijo = document.getElementById('Prefijo').value;
@@ -43,9 +41,8 @@
 
         // Abrir la URL en una nueva pestaña
         window.open(mensaje);
-    });
+    }
 </script>
-
  
   <div id="logo" class="section"><img src="images/Captura-de-pantalla-2024-07-20-a-las-14.50.34.png" width="379" sizes="(max-width: 479px) 100vw, 379px" srcset="images/Captura-de-pantalla-2024-07-20-a-las-14.50.34-p-500.png 500w, images/Captura-de-pantalla-2024-07-20-a-las-14.50.34.png 720w" alt=""></div>
   <div class="section-2">
