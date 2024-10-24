@@ -19,8 +19,8 @@
 </head>
 <body>
 
-  <script>
-    function enviarConsulta() {
+<script>
+    function ok() {
         // Obtener los valores del formulario
         var nombre = document.getElementById('Nombre').value;
         var prefijo = document.getElementById('Prefijo').value;
@@ -55,8 +55,8 @@
         </div>
         <div class="w-col w-col-5 w-col-tiny-tiny-stack">
           <div class="w-form">
-<!-- Aquí va tu formulario -->
-<form id="email-form" name="email-form" method="get" class="form">
+<!-- Formulario con método POST y acción vacía -->
+<form id="email-form" name="email-form" method="post" action="#">
     <input class="text-field w-input" maxlength="256" name="Nombre" placeholder="Nombre *" type="text" id="Nombre" required="">
     <div class="div-block-3">
         <select id="Prefijo" name="Prefijo" required="" class="select-field prefijo w-select">
@@ -73,7 +73,7 @@
         <option value="Otro">Otro</option>
     </select>
     <textarea id="Consulta" name="Consulta" placeholder="Consulta" maxlength="5000" class="textarea consulta w-input"></textarea>
-    <input type="submit" class="submit-button w-button" value="ENVIAR CONSULTA">
+    <button id="post" onclick="ok(); return false;">Enviar</button>
 </form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
