@@ -64,7 +64,6 @@
         </select>
         <input class="text-field-3 w-input" maxlength="256" name="Telefono" placeholder="WhatsApp *" type="text" id="Telefono-3" required="">
     </div>
-    <input class="text-field-2 w-input" maxlength="256" name="Email" placeholder="Email" type="email" id="Email-3">
     <select id="Negocio" name="Negocio" required="" class="select-field w-select">
         <option value="">Tipo de negocio *</option>
         <option value="Resto/Bar">Resto/Bar</option>
@@ -73,7 +72,7 @@
         <option value="Otro">Otro</option>
     </select>
     <textarea id="Consulta" name="Consulta" placeholder="Consulta" maxlength="5000" class="textarea consulta w-input"></textarea>
-    <button id="post" onclick="ok(); return false;">Enviar</button>
+    <input type="submit" class="submit-button w-button" value="ENVIAR CONSULTA" onclick="ok(); return false;">
 </form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
