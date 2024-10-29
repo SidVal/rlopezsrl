@@ -48,11 +48,13 @@
     function ok() {
         // Obtener los valores del formulario
         var nombre = document.getElementById('Nombre').value;
+        var telefono = document.getElementById('Telefono-3').value;
         var negocio = document.getElementById('Negocio').value;
         var consulta = document.getElementById('Consulta').value;
     
         // Crear el mensaje preformateado con negritas y saltos de línea
         var waStr = `Hola, soy *${nombre}*.\n\n` +
+                    `*Celular:* ${negocio}\n\n` +
                     `*Tipo de negocio:* ${negocio}\n\n` +
                     `*Consulta:* ${consulta}`;
     
@@ -181,8 +183,8 @@
   <div class="section-9">
     <div class="w-container">
       <div class="w-embed">
-        <a style="color:#fff; text-decoration:none;">Tecnología por</a>
-        <a href="https://clienty.co/" style="color:#fff; text-decoration:none;">Clienty.co</a>
+        <a style="color:#fff; text-decoration:none;">Desarrollado por</a>
+        <a href="https://github.com/SidVal" title="WallyDev" style="color:#fff; text-decoration:none;">WallyDev</a>
         <a style="color:#fff; text-decoration:none;"></a>
       </div>
     </div>
