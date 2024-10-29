@@ -20,26 +20,23 @@
 <body>
 
 <script>
-    function ok() {
-        // Obtener los valores del formulario
-        var nombre = document.getElementById('Nombre').value;
-        var prefijo = document.getElementById('Prefijo').value;
-        var telefono = document.getElementById('Telefono-3').value;
-        var negocio = document.getElementById('Negocio').value;
-        var consulta = document.getElementById('Consulta').value;
-
-        // Crear el mensaje preformateado con encodeURIComponent
-        var waStr = `Hola, soy ${nombre}.
-        Prefijo y Teléfono: ${prefijo} ${telefono}
-        Tipo de negocio: ${negocio}
-        Consulta: ${consulta}`;
-
-        // Número de destino de WhatsApp (cambiar por el número real)
-        var mensaje = "https://wa.me/5493512600009?text=" + encodeURIComponent(waStr);
-
-        // Abrir la URL en una nueva pestaña
-        window.open(mensaje);
-    }
+  function ok() {
+      // Obtener los valores del formulario
+      var nombre = document.getElementById('Nombre').value;
+      var negocio = document.getElementById('Negocio').value;
+      var consulta = document.getElementById('Consulta').value;
+  
+      // Crear el mensaje preformateado con encodeURIComponent
+      var waStr = `Hola, soy ${nombre}.%0A%0A
+      *Tipo de negocio:* ${negocio}%0A%0A
+      *Consulta:* ${consulta}`;
+  
+      // Número de destino de WhatsApp (cambiar por el número real)
+      var mensaje = "https://wa.me/5493512600009?text=" + encodeURIComponent(waStr);
+  
+      // Abrir la URL en una nueva pestaña
+      window.open(mensaje);
+  }
 </script>
  
   <div id="logo" class="section"><img src="images/Captura-de-pantalla-2024-07-20-a-las-14.50.34.png" width="379" sizes="(max-width: 479px) 100vw, 379px" srcset="images/Captura-de-pantalla-2024-07-20-a-las-14.50.34-p-500.png 500w, images/Captura-de-pantalla-2024-07-20-a-las-14.50.34.png 720w" alt=""></div>
