@@ -1,0 +1,54 @@
+name: Clonar Carpeta
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  process-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Duplicar carpeta snacks a aceites-oliva
+        id: clonned
+        run: |
+          set -euo pipefail
+
+          SRC="snacks"
+          DST="aceites-oliva"
+
+          if [ ! -d "$SRC" ]; then
+            echo "No existe $SRC"
+            echo "clon=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          if [ -e "$DST" ]; then
+            echo "Ya existe $DST. No sobreescribo."
+            echo "clon=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          cp -a "$SRC" "$DST"
+          echo "Copiado $SRC -> $DST"
+          echo "clon=true" >> $GITHUB_OUTPUT
+
+      - name: Commit y push archivos procesados
+        if: steps.clonned.outputs.clon == 'true'
+        run: |
+          git config --local user.email "SidVal@users.noreply.github.com"
+          git config --local user.name "SidVal"
+          git add aceites-oliva
+          git commit -m "Clonar snacks a aceites-oliva"
+          git push
+
+      - name: Emitir evento al finalizar si es exitoso
+        if: steps.clonned.outputs.clon == 'true'
+        run: echo "Fin del flujo de trabajo"
+        id: notify-success
