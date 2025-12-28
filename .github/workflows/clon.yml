@@ -15,29 +15,40 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Duplicar carpeta snacks a aceites-oliva
+      - name: Duplicar carpeta snacks a aceites-oliva (images vacía)
         id: clonned
         run: |
           set -euo pipefail
-
+      
           SRC="snacks"
           DST="aceites-oliva"
-
+      
           if [ ! -d "$SRC" ]; then
             echo "No existe $SRC"
             echo "clon=false" >> $GITHUB_OUTPUT
             exit 0
           fi
-
+      
           if [ -e "$DST" ]; then
             echo "Ya existe $DST. No sobreescribo."
             echo "clon=false" >> $GITHUB_OUTPUT
             exit 0
           fi
-
-          cp -a "$SRC" "$DST"
-          echo "Copiado $SRC -> $DST"
+      
+          # Crear destino
+          mkdir -p "$DST"
+      
+          # Copiar todo excepto el contenido de images
+          rsync -a \
+            --exclude='images/*' \
+            "$SRC/" "$DST/"
+      
+          # Asegurar que images exista pero esté vacía
+          mkdir -p "$DST/images"
+      
+          echo "Copiado $SRC -> $DST (images vacía)"
           echo "clon=true" >> $GITHUB_OUTPUT
+
 
       - name: Commit y push archivos procesados
         if: steps.clonned.outputs.clon == 'true'
