@@ -39,6 +39,19 @@
             width: 30px;
             height: 30px;
         }
+  /* Botón de WhatsApp fin */
+/* Otros Estilos */
+   .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+   }
   </style>
   
 </head>
@@ -81,11 +94,13 @@
 <form id="email-form" name="email-form" method="get" action="#">
     <input class="text-field w-input" maxlength="256" name="Nombre" placeholder="Nombre *" type="text" id="Nombre" required="">
     <div class="div-block-3">
+        <label for="Prefijo" class="sr-only">Selecciona un prefijo:</label>
         <select id="Prefijo" name="Prefijo" required="" class="select-field prefijo w-select">
             <option value="+549">+549</option>
         </select>
         <input class="text-field-3 w-input" maxlength="256" name="Telefono" placeholder="WhatsApp *" type="text" id="Telefono-3" required="">
     </div>
+    <label for="Negocio" class="sr-only">Selecciona un tipo de negocio:</label>
     <select id="Negocio" name="Negocio" required="" class="select-field w-select">
         <option value="">Tipo de negocio *</option>
         <option value="Resto/Bar">Resto/Bar</option>
@@ -180,7 +195,7 @@ El nombre <strong>AIMURAI tiene raíces en el quechua</strong>, lengua ancestral
     <div class="w-container">
       <h2 class="heading-4 direccion">¿Dónde estamos?</h2>
       <div class="text-block-3">Nave 8 - Puesto 816/818<br>Mercado de Abasto<br>Av. de la Semilleria s/n, 5000 <br>Córdoba, Argentina</div>
-      <div class="w-embed w-iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3037.6885131066315!2d-64.1114804!3d-31.3932136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943297d9688fa5b1%3A0xc33328efb96be880!2sRafael%20L%C3%B3pez%20S.R.L.!5e1!3m2!1ses-419!2ses!4v1721483525364!5m2!1ses-419!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="w-embed w-iframe"><iframe title="Rafael López SRL en Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3037.6885131066315!2d-64.1114804!3d-31.3932136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943297d9688fa5b1%3A0xc33328efb96be880!2sRafael%20L%C3%B3pez%20S.R.L.!5e1!3m2!1ses-419!2ses!4v1721483525364!5m2!1ses-419!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
   </div>
   <div class="section-9">
