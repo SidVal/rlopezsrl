@@ -43,42 +43,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
 
-  <style>
-        /* Estilos para el botón de WhatsApp */
-        .whatsapp-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            text-decoration: none;
-            z-index: 1000;
-        }
-        .whatsapp-btn img {
-            width: 30px;
-            height: 30px;
-        }
-/* Botón de WhatsApp fin */
-/* Otros Estilos */
-   .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border-width: 0;
-   }
+  <style>.whatsapp-btn{position:fixed;bottom:20px;right:20px;background-color:#25D366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgb(0 0 0 / .2);cursor:pointer;text-decoration:none;z-index:1000}.whatsapp-btn svg{width:30px;height:30px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal}
   </style>
   
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -109,8 +74,18 @@
         window.open(mensaje);
     }
 </script>
+
+<a href="#contenido-principal" class="sr-only sr-only-focusable">
+  Saltar al contenido principal
+</a>   
   
-  <div id="logo" class="section"><img src="images/Captura-de-pantalla-2024-07-20-a-las-14.50.34.png" width="379" sizes="(max-width: 479px) 100vw, 379px" srcset="images/Captura-de-pantalla-2024-07-20-a-las-14.50.34-p-500.png 500w, images/Captura-de-pantalla-2024-07-20-a-las-14.50.34.png 720w" alt=""></div>
+  <header role="banner">
+  <div id="logo" class="section">
+    <img src="images/Captura-de-pantalla-2024-07-20-a-las-14.50.34.png" width="379" alt="Rafael López SRL">
+  </div>
+</header>
+
+<main id="contenido-principal" role="main">  
   <div class="section-2">
     <div class="presupuesto-3"></div>
     <div class="w-container">
@@ -184,6 +159,11 @@
       <div class="w-embed w-iframe"><iframe title="Rafael Lopez SRL en Google Mapas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3037.6885131066315!2d-64.1114804!3d-31.3932136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943297d9688fa5b1%3A0xc33328efb96be880!2sRafael%20L%C3%B3pez%20S.R.L.!5e1!3m2!1ses-419!2ses!4v1721483525364!5m2!1ses-419!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
   </div>
+
+</main>
+
+<footer role="contentinfo">
+   
   <div class="section-9">
     <div class="w-container">
       <div class="w-embed">
@@ -203,6 +183,8 @@
     </svg>
 </a>
   </div>
+</footer>
+   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/webflow-min.js" type="text/javascript"></script>
 </body>
