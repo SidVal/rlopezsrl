@@ -10,7 +10,7 @@
 }
 
 .section-2 {
-  background-image: url('../images/8cc8b108-0ca2-494d-bbc4-510e8b714199_16-9-discover-aspect-ratio_default_1007106.jpg');
+  background-image: url('../images/frutas-verduras-mercado-abasto-rafael-lopez-1200.webp');
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -129,16 +129,6 @@
   inset: 0;
 }
 
-.text-block-2 {
-  text-align: center;
-  margin-bottom: 20px;
-  padding-top: 130px;
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 25px;
-}
-
 .column-5 {
   padding-left: 20px;
   padding-right: 20px;
@@ -163,27 +153,8 @@
   margin-bottom: 15px;
 }
 
-.column-7, .column-8, .column-9 {
-  text-align: center;
-}
-
 .columns {
   margin-bottom: 20px;
-}
-
-.section-6 {
-  background-image: linear-gradient(#00000080, #00000080), url('../images/banner.jpg');
-  background-position: 0 0, 50%;
-  background-size: auto, cover;
-  background-attachment: scroll, fixed;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.section-6.cta {
-  background-image: linear-gradient(#0009, #0009), url('../images/calandria.jpeg');
-  background-position: 0 0, 50% 0;
-  background-size: auto, 1200px;
 }
 
 .heading-5 {
@@ -210,16 +181,6 @@
 
 .button-2:hover {
   background-color: #b4b4b4;
-}
-
-.section-7 {
-  background-color: #e7e7e7;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.section-7.marcas {
-  padding-bottom: 35px;
 }
 
 .section-8 {
@@ -270,20 +231,7 @@
   margin-right: 60px;
 }
 
-.image-33, .image-34, .image-35 {
-  border-radius: 1000px;
-}
-
 .column-16 {
-  text-align: center;
-}
-
-.section-10 {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.column-17 {
   text-align: center;
 }
 
@@ -296,53 +244,6 @@
 
 .container-2 {
   text-align: center;
-}
-
-.image-36, .image-37, .image-38, .image-39, .image-40, .image-41, .image-42, .image-43 {
-  border-radius: 6px;
-}
-
-.column-18 {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.section-11 {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.slider-2 {
-  height: 500px;
-}
-
-.slide {
-  background-image: url('../images/BALI-VERANO1-Tejidos-del-Rincon.jpg');
-  background-position: 50%;
-  background-size: cover;
-}
-
-.slide-2 {
-  background-image: url('../images/fabrica-telas.jpg');
-  background-position: 0 0;
-  background-size: cover;
-}
-
-.slide-3 {
-  background-image: url('../images/Maui-Verano-2019-Tejidos-del-Rincon.jpg');
-  background-position: 50%;
-  background-size: cover;
-}
-
-.div-block-2 {
-  background-color: #d30000;
-  border-radius: 0 10px 10px 0;
-  width: 150px;
-  position: fixed;
-}
-
-.div-block-2.pagos {
-  top: 276.891px;
 }
 
 .text-block-5 {
@@ -362,12 +263,6 @@
   font-size: 14px;
 }
 
-.text-block-5.presupuesto {
-  color: #fff;
-  padding-left: 15px;
-  position: fixed;
-}
-
 .medios-pago {
   z-index: 2;
   background-color: #fff;
@@ -378,47 +273,11 @@
   top: 280.891px;
 }
 
-.presupuesto {
-  background-color: #c90000;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 150px;
-}
-
-.image-44 {
-  margin-bottom: 10px;
-  padding-top: 49px;
-}
-
-.image-45 {
-  padding-left: 0;
-  position: relative;
-  left: 333px;
-}
-
-.presupuesto-2 {
-  z-index: 2;
-  background-color: #c90000;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 150px;
-  position: fixed;
-}
-
 .presupuesto-3 {
   background-color: #c4d557;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 120px;
-}
-
-.link-4 {
-  color: #fff;
-  text-decoration: none;
-}
-
-.video {
-  height: 350px;
 }
 
 .select-field {
@@ -431,16 +290,11 @@
 }
 
 .section-12 {
-  background-image: url('../images/8cc8b108-0ca2-494d-bbc4-510e8b714199_16-9-discover-aspect-ratio_default_1007106.jpg');
+  background-image: url('../images/frutas-verduras-mercado-abasto-rafael-lopez-1200.webp');
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
   height: 80px;
-}
-
-.text-block-6 {
-  color: var(--white);
-  font-family: Lato, sans-serif;
 }
 
 .div-block-3 {
@@ -475,6 +329,13 @@ html.w-mod-js [data-ix="aparecer-de-der-a-izq"] {
 @media screen and (max-width: 767px) {
   .section-2 {
     padding-top: 62px;
+    background-image: url('../images/frutas-verduras-mercado-abasto-rafael-lopez-900.webp');
+    background-attachment: scroll;
+  }
+
+  .section-12 {
+    background-image: url('../images/frutas-verduras-mercado-abasto-rafael-lopez-900.webp');
+    background-attachment: scroll;
   }
 
   .column-5 {
@@ -494,6 +355,11 @@ html.w-mod-js [data-ix="aparecer-de-der-a-izq"] {
   .section-4.productos1 {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .section-2,
+  .section-12{
+    background-attachment:scroll;
   }
 
   .column-8 {
