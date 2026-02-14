@@ -1,0 +1,35 @@
+name: Rollback N commits
+
+on:
+  workflow_dispatch:
+    inputs:
+      commits:
+        description: "Número de commits a revertir"
+        required: true
+        default: "1"
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Revert commits
+        run: |
+          COUNT=${{ github.event.inputs.commits }}
+          echo "Revirtiendo $COUNT commits"
+
+          git revert --no-edit HEAD~$((COUNT-1))..HEAD
+
+      - name: Push changes
+        run: |
+          git push origin HEAD
