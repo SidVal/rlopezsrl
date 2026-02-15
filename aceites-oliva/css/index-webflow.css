@@ -509,7 +509,7 @@
 }
 
 .button-3 {
-  background-color: #509064;
+  background-color: #336145;
   border-radius: 10px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
@@ -518,7 +518,7 @@
 }
 
 .button-3:hover {
-  background-color: #3f704f;
+  background-color: #3b6133;
 }
 
 @media screen and (max-width: 991px) {
