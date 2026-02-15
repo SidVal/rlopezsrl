@@ -30,11 +30,16 @@
 <!-- Favicons -->
    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 <!-- Asyncs -->
+<!-- 1. Conexiones rápidas (Prioridad Máxima) -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="preload" fetchpriority="high" as="image" href="/aceites-oliva/images/aimurai-calidad-exportacion-1200.webp" type="image/webp"  media="(min-width: 768px)">
+
+<!-- 2. Preload de imágenes (Solo la que corresponde al dispositivo) -->
+   <link rel="preload" fetchpriority="high" as="image" href="/aceites-oliva/images/aimurai-calidad-exportacion-1200.webp" type="image/webp" media="(min-width: 768px)">
    <link rel="preload" fetchpriority="high" as="image" href="/aceites-oliva/images/aimurai-calidad-exportacion-400.webp" type="image/webp" media="(max-width: 767px)">
+
+<!-- 3. CSS de fuentes cargado de forma asíncrona (No bloqueante) -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
 <!-- Css -->
    <link href="/css/normalize-min.css" rel="stylesheet" type="text/css">
    <link href="/css/webflow-min.css" rel="stylesheet" type="text/css">
