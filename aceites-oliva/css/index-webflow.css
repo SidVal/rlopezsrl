@@ -29,7 +29,7 @@
 }
 
 .section-2 {
-  background-image: url('../images/daguirre8.jpg');
+  background-image: url('../images/aimurai-calidad-exportacion-1200.webp');
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -476,27 +476,27 @@
 }
 
 .div-block-4 {
-  background-image: url('../images/daguirre-optimized.jpg');
+  background-image: url('../images/daguirre-aimurai-cordoba.webp');
   background-position: 50% 0;
   background-size: cover;
-  height: 300px;
+  height: 302px;
 }
 
 .div-block-4._2 {
-  background-image: url('../images/daguirre-premium-optimized.jpg');
+  background-image: url('../images/daguirre-premium-cordoba.webp');
 }
 
 .div-block-4._3 {
-  background-image: url('../images/azait-optimized.jpg');
+  background-image: url('../images/azait-cordoba.webp');
 }
 
 .div-block-4._4 {
-  background-image: url('../images/olica-optimized.jpg');
+  background-image: url('../images/olica-cordoba.webp');
   background-position: 50%;
 }
 
 .div-block-4._5 {
-  background-image: url('../images/siriano-optimized.jpg');
+  background-image: url('../images/siriano-cordoba.webp');
 }
 
 .columns-2, .columns-3 {
@@ -521,21 +521,6 @@
   background-color: #3f704f;
 }
 
-html.w-mod-js [data-ix="aparecer-desde-el-centro"] {
-  opacity: 0;
-  transform: scale(.5);
-}
-
-html.w-mod-js [data-ix="aparecer-de-izq-a-der"] {
-  opacity: 0;
-  transform: translate(-100px);
-}
-
-html.w-mod-js [data-ix="aparecer-de-der-a-izq"] {
-  opacity: 0;
-  transform: translate(100px);
-}
-
 @media screen and (max-width: 991px) {
   .text-block-5.presupuesto, .medios-pago {
     display: none;
@@ -548,7 +533,9 @@ html.w-mod-js [data-ix="aparecer-de-der-a-izq"] {
 
 @media screen and (max-width: 767px) {
   .section-2 {
+    background-image: url('../images/aimurai-calidad-exportacion-400.webp');
     padding-top: 62px;
+    background-attachment: scroll;
   }
 
   .column-5 {
