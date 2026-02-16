@@ -50,26 +50,46 @@
   position: relative;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #333;
+/* Contenedor principal del logo */
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-link {
+  text-decoration: none; /* Quita el subrayado del link */
+  display: block;
 }
 
 .brand-main {
   font-weight: 700;
   font-size: 1.25rem;
-  color: #1e4d2b; /* tu verde institucional */
+  color: #1e4d2b; /* Tu verde institucional */
   letter-spacing: 0.3px;
+  line-height: 1.1; /* Ajusta para que no haya mucho espacio con el sub */
+}
+
+/* El toque sutil para el SRL */
+.srl {
+  font-size: 0.85rem; 
+  font-weight: 400;
+  vertical-align: middle;
+  margin-left: 2px;
+  opacity: 0.8;
 }
 
 .brand-sub {
   font-weight: 500;
-  font-size: 0.75rem;
-  color: #6b6b6b; /* gris neutro elegante */
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
+  font-size: 0.7rem; /* Un poco más pequeño para que no compita */
+  color: #6b6b6b; /* Gris neutro elegante */
+  text-transform: lowercase; /* En minúsculas suele verse más moderno para dominios */
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Hover opcional para feedback de usuario */
+.logo-link:hover .brand-main {
+  color: #2a6b3c; 
 }
 
 .nav-links {
@@ -194,10 +214,14 @@
   
 <header role="banner">
    <nav class="nav-container">
-      <span class="brand-main">
-         <a href="/" class="logo">Rafael López <span class="srl">SRL</span></a>
-      </span>
-      <span class="brand-sub">RLopezSRL.com</span>
+      <div class="logo-wrapper">
+         <a href="/" class="logo-link" aria-label="Rafael López SRL - rlopezsrl.com">
+            <div class="brand-main">
+               Rafael López <span class="srl">SRL</span>
+            </div>
+            <div class="brand-sub">rlopezsrl.com</div>
+         </a>
+      </div>
    
      <input type="checkbox" id="menu-toggle" class="menu-toggle">
      <label for="menu-toggle" class="hamburger">
