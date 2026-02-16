@@ -39,6 +39,91 @@
    <link href="css/rafaellopez.webflow-min.css" rel="stylesheet" type="text/css">
 <!-- Estilos personalizados -->
    <style>.whatsapp-btn{position:fixed;bottom:20px;right:20px;background-color:#25D366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgb(0 0 0 / .2);cursor:pointer;text-decoration:none;z-index:1000}.whatsapp-btn svg{width:30px;height:30px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal}.icon{width:64px;height:64px;color:white;margin-top:30px}.reveal{opacity:0;transform:translateY(40px) scale(.95);transition:opacity .6s ease,transform .6s ease}.reveal.is-visible{opacity:1;transform:translateY(0) scale(1)}.map{margin:40px 0}.map a{display:block}.map img{display:block;max-width:500px;margin:40px auto;height:auto}
+      /* Reset básico para evitar CLS */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #fff;
+  font-family: sans-serif; /* Usa fuentes del sistema para velocidad máxima */
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #333;
+}
+
+.brand-main {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1e4d2b; /* tu verde institucional */
+  letter-spacing: 0.3px;
+}
+
+.brand-sub {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #6b6b6b; /* gris neutro elegante */
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover { color: #000; }
+
+/* Escondemos el checkbox y la hamburguesa en Desktop */
+.menu-toggle, .hamburger { display: none; }
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+  }
+
+  .nav-links {
+    display: none; /* Escondido por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  }
+
+  /* El "Truco" del Checkbox: Si está marcado, mostramos el menú */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
   </style>
 <!-- Schema -->
    <script type="application/ld+json">
@@ -108,21 +193,25 @@
 </a>   
   
 <header role="banner">
-  <div id="logo" class="section">
-    <img
-      src="/images/rafael-lopez-logo-400.webp"
-      srcset="
-        /images/rafael-lopez-logo-400.webp 400w,
-        /images/rafael-lopez-logo-760.webp 760w
-      "
-      sizes="(max-width: 480px) 100vw, 379px"
-      width="379"
-      height="65"
-      alt="Rafael López SRL - Mercado de Abasto Córdoba"
-      fetchpriority="high"
-      decoding="async"
-    >
-  </div>
+   <nav class="nav-container">
+      <span class="brand-main">
+         <a href="/" class="logo">Rafael López <span class="srl">SRL</span></a>
+      </span>
+      <span class="brand-sub">RLopezSRL.com</span>
+   
+     <input type="checkbox" id="menu-toggle" class="menu-toggle">
+     <label for="menu-toggle" class="hamburger">
+       <span></span>
+       <span></span>
+       <span></span>
+     </label>
+   
+     <ul class="nav-links">
+       <li><a href="/">Frutas y Verduras</a></li>
+       <li><a href="/aceites-oliva/">Aceites de Oliva</a></li>
+       <li><a href="/snacks-mani/">Snacks: Maní</a></li>
+     </ul>
+   </nav>
 </header>
 
 <main id="contenido-principal" role="main">  
