@@ -1,0 +1,42 @@
+name: Renombrar Carpeta
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rename-folder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Renombrar carpeta
+        run: |
+          set -euo pipefail
+
+          SRC="snacks"
+          DST="snacks-mani"
+
+          if [ ! -d "$SRC" ]; then
+            echo "No existe $SRC"
+            exit 1
+          fi
+
+          if [ -e "$DST" ]; then
+            echo "Ya existe $DST"
+            exit 1
+          fi
+
+          git mv "$SRC" "$DST"
+
+      - name: Commit y push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Renombrar carpeta snacks a snacks-mani"
+          git push
