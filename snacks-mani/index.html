@@ -73,30 +73,38 @@
   
 </head>
 <body>
-  
+   
 <a href="#contenido-principal" class="sr-only sr-only-focusable">
   Saltar al contenido principal
-</a>
- 
+</a>   
+  
 <header role="banner">
-  <div id="logo" class="section">
-    <img
-      src="/images/rafael-lopez-logo-400.webp"
-      srcset="
-        /images/rafael-lopez-logo-400.webp 400w,
-        /images/rafael-lopez-logo-760.webp 760w
-      "
-      sizes="(max-width: 480px) 100vw, 379px"
-      width="379"
-      height="65"
-      alt="Rafael López SRL - Mercado de Abasto Córdoba"
-      fetchpriority="high"
-      decoding="async"
-    >
-  </div>
+   <nav class="nav-container" aria-label="Navegación principal">
+      <div class="logo-wrapper">
+         <a href="/" class="logo-link" aria-label="Rafael López SRL - rlopezsrl.com">
+            <div class="brand-main">
+               Rafael López <span class="srl">SRL</span>
+            </div>
+            <div class="brand-sub">rlopezsrl.com</div>
+         </a>
+      </div>
+   
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Abrir menú">
+         <span></span>
+         <span></span>
+         <span></span>
+      </label>
+   
+     <ul class="nav-links">
+       <li><a href="/frutas-verduras/">Frutas y Verduras</a></li>
+       <li><a href="/aceites-oliva/">Aceites de Oliva</a></li>
+       <li><a href="/snacks-mani/">Snacks: Maní</a></li>
+     </ul>
+   </nav>
 </header>
 
-<main id="contenido-principal" role="main"> 
+<main id="contenido-principal" role="main">  
   <div class="section-2">
     <div class="presupuesto-3"></div>
     <div class="w-container">
