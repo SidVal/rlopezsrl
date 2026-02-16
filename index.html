@@ -40,6 +40,11 @@
 <!-- Estilos personalizados -->
    <style>.whatsapp-btn{position:fixed;bottom:20px;right:20px;background-color:#25D366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgb(0 0 0 / .2);cursor:pointer;text-decoration:none;z-index:1000}.whatsapp-btn svg{width:30px;height:30px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal}.icon{width:64px;height:64px;color:white;margin-top:30px}.reveal{opacity:0;transform:translateY(40px) scale(.95);transition:opacity .6s ease,transform .6s ease}.reveal.is-visible{opacity:1;transform:translateY(0) scale(1)}.map{margin:40px 0}.map a{display:block}.map img{display:block;max-width:500px;margin:40px auto;height:auto}
       /* Reset básico para evitar CLS */
+header {
+  position: relative;
+  z-index: 1000;
+}
+      
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -72,11 +77,11 @@
 
 /* El toque sutil para el SRL */
 .srl {
-  font-size: 0.85rem; 
-  font-weight: 400;
-  vertical-align: middle;
-  margin-left: 2px;
-  opacity: 0.8;
+   font-size: 0.85rem; 
+   font-weight: 400;
+   vertical-align: baseline;
+   margin-left: 2px;
+   opacity: 0.8;
 }
 
 .brand-sub {
@@ -132,6 +137,7 @@
     display: none; /* Escondido por defecto */
     flex-direction: column;
     position: absolute;
+    z-index: 1001;
     top: 100%;
     left: 0;
     width: 100%;
