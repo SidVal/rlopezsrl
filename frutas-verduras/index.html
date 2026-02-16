@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- Basic Page Needs -->
+   <meta charset="utf-8">
+   <title>Rafael López S.R.L. - Frutas y Verduras en Córdoba</title>
+   <meta name="author" content="Osvaldo López">
+   <link rel="canonical" href="https://www.rlopezsrl.com/frutas-verduras/" />
+   <link rel="alternate" href="https://www.rlopezsrl.com/frutas-verduras/" hreflang="es-ar" />
+<!-- Search Engine -->
+   <meta name="description" content="Venta mayorista de frutas, verduras y hortalizas en el Mercado de Abasto de Córdoba. Desde el campo a tu negocio.">
+   <meta name="image" content="https://www.rlopezsrl.com/images/portada-rafael-lopez-face.png">
+<!-- Schema.org for Google -->
+   <meta itemprop="name" content="Rafael López SRL - Frutas, verduras y hortalizas frescas en Córdoba">
+   <meta itemprop="description" content="Venta mayorista de frutas, verduras y hortalizas en el Mercado de Abasto de Córdoba. Desde el campo a tu negocio.">
+   <meta itemprop="image" content="https://www.rlopezsrl.com/images/portada-rafael-lopez-face.png">
+<!-- Open Graph general -->
+   <meta property="og:title" content="Rafael López SRL - Frutas, verduras y hortalizas frescas en Córdoba">
+   <meta name="og:description" content="Venta mayorista de frutas, verduras y hortalizas en el Mercado de Abasto de Córdoba. Desde el campo a tu negocio.">
+   <meta name="og:image" content="https://www.rlopezsrl.com/images/portada-rafael-lopez-face.png">
+   <meta name="og:url" content="https://www.rlopezsrl.com/frutas-verduras/">
+   <meta name="og:site_name" content="Rafael López SRL - Frutas, verduras y hortalizas frescas en Córdoba">
+   <meta name="og:locale" content="es_AR">
+   <meta name="fb:admins" content="754013463">
+   <meta name="fb:app_id" content="2413056505592298">
+   <meta name="og:type" content="website">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  
+<!-- Favicons -->
+   <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+<!-- Asyncs -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<!-- Css -->
+   <link href="/css/webflow-min.css" rel="stylesheet" type="text/css">
+   <link href="/css/rafaellopez.webflow-min.css" rel="stylesheet" type="text/css">
+<!-- Estilos personalizados -->
+   <style>.whatsapp-btn{position:fixed;bottom:20px;right:20px;background-color:#25D366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgb(0 0 0 / .2);cursor:pointer;text-decoration:none;z-index:1000}.whatsapp-btn svg{width:30px;height:30px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal}.icon{width:64px;height:64px;color:white;margin-top:30px}.reveal{opacity:0;transform:translateY(40px) scale(.95);transition:opacity .6s ease,transform .6s ease}.reveal.is-visible{opacity:1;transform:translateY(0) scale(1)}.map{margin:40px 0}.map a{display:block}.map img{display:block;max-width:500px;margin:40px auto;height:auto}
+      /* Reset básico para evitar CLS */
+header {
+  position: relative;
+  z-index: 1000;
+}
+      
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  position: relative;
+  min-height: 70px;
+}
+
+/* Contenedor principal del logo */
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-link {
+  text-decoration: none; /* Quita el subrayado del link */
+  display: block;
+}
+
+.brand-main {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1e4d2b; /* Tu verde institucional */
+  letter-spacing: 0.3px;
+  line-height: 1.1; /* Ajusta para que no haya mucho espacio con el sub */
+}
+
+/* El toque sutil para el SRL */
+.srl {
+   font-size: 0.85rem; 
+   font-weight: 400;
+   vertical-align: baseline;
+   margin-left: 2px;
+   opacity: 0.8;
+}
+
+.brand-sub {
+  font-weight: 500;
+  font-size: 0.7rem; /* Un poco más pequeño para que no compita */
+  color: #6b6b6b; /* Gris neutro elegante */
+  text-transform: lowercase; /* En minúsculas suele verse más moderno para dominios */
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Hover opcional para feedback de usuario */
+.logo-link:hover .brand-main {
+  color: #2a6b3c; 
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover { color: #000; }
+
+/* Escondemos el checkbox y la hamburguesa en Desktop */
+.menu-toggle, .hamburger { display: none; }
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+  }
+
+  .nav-links {
+    display: none; /* Escondido por defecto */
+    flex-direction: column;
+    position: absolute;
+    z-index: 1001;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    gap: 12px;
+    font-size: 0.85rem;
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  /* El "Truco" del Checkbox: Si está marcado, mostramos el menú */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+  </style>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Frutas, Verduras y Hortalizas para tu negocio gastronómico, supermercado o verdulería desde el campo a tu local comercial",
+    "description": "Venta mayorista de frutas, verduras y hortalizas en el Mercado de Abasto de Córdoba. Desde el campo a tu negocio.",
+    "url": "https://rlopezsrl.com/aceites-oliva/",
+    "datePublished": "2025-12-28T17:25:00-03:00",
+    "dateModified": "2026-02-16T15:29:30-03:00",
+    "isPartOf": {
+      "@id": "https://rlopezsrl.com/#business"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://rlopezsrl.com/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Frutas y Verduras",
+      "item": "https://rlopezsrl.com/frutas-verduras/"
+    }]
+  }
+]
+</script>
+
+   
+</head>
+<body>
+   
+<a href="#contenido-principal" class="sr-only sr-only-focusable">
+  Saltar al contenido principal
+</a>   
+  
+<header role="banner">
+   <nav class="nav-container" aria-label="Navegación principal">
+      <div class="logo-wrapper">
+         <a href="/" class="logo-link" aria-label="Rafael López SRL - rlopezsrl.com">
+            <div class="brand-main">
+               Rafael López <span class="srl">SRL</span>
+            </div>
+            <div class="brand-sub">rlopezsrl.com</div>
+         </a>
+      </div>
+   
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Abrir menú">
+         <span></span>
+         <span></span>
+         <span></span>
+      </label>
+   
+     <ul class="nav-links">
+       <li><a href="/frutas-verduras/">Frutas y Verduras</a></li>
+       <li><a href="/aceites-oliva/">Aceites de Oliva</a></li>
+       <li><a href="/snacks-mani/">Snacks: Maní</a></li>
+     </ul>
+   </nav>
+</header>
+
+<main id="contenido-principal" role="main">  
+  <div class="section-2">
+    <div class="presupuesto-3"></div>
+    <div class="w-container">
+      <div class="w-row">
+        <div class="column-5 w-col w-col-7 w-col-tiny-tiny-stack">
+          <h2 class="heading">Llena tu negocio con frutas y verduras frescas al mejor precio y calidad</h2>
+          <h2 class="heading-2">¡Completa tus datos y te contactamos hoy!</h2>
+        </div>
+        <div class="w-col w-col-5 w-col-tiny-tiny-stack">
+          <div class="w-form">
+          <!-- Formulario optimizado by WallyDev -->
+          <form id="email-form" name="email-form" method="get" action="#">
+              <input class="text-field w-input" maxlength="256" name="Nombre" placeholder="Nombre *" type="text" id="Nombre" required="">
+              <div class="div-block-3">
+                  <label for="Prefijo" class="sr-only">Selecciona un prefijo:</label>
+                  <select id="Prefijo" name="Prefijo" required="" class="select-field prefijo w-select">
+                      <option value="+549">+549</option>
+                  </select>
+                  <input class="text-field-3 w-input" maxlength="256" name="Telefono" placeholder="WhatsApp *" type="text" id="Telefono-3" required="">
+              </div>
+              <label for="Negocio" class="sr-only">Selecciona un tipo de negocio:</label>
+              <select id="Negocio" name="Negocio" required="" class="select-field w-select">
+                  <option value="">Tipo de negocio *</option>
+                  <option value="Resto/Bar">Resto/Bar</option>
+                  <option value="Verdulería">Verdulería</option>
+                  <option value="Reparto/Distribuidor">Reparto/Distribuidor</option>
+                  <option value="Otro">Otro</option>
+              </select>
+              <textarea id="Consulta" name="Consulta" placeholder="Consulta" maxlength="5000" class="textarea consulta w-input"></textarea>
+              <input type="button" class="submit-button w-button" value="ENVIAR CONSULTA" id="btn-wa">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-3 diferenciales">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="column w-col w-col-3">
+          <div class="div-block reveal">
+               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+</div>
+          <div class="text-block"><strong>EMPRESA CON TRAYECTORIA<br>‍</strong>Más de 50 años de experiencia.</div>
+        </div>
+        <div class="column-2 w-col w-col-3">
+          <div class="div-block reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+          </div>
+          <div class="text-block"><strong>ACUERDO COMERCIAL<br></strong>Te acompañamos y proponemos el mejor trato comercial para tu negocio.</div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="div-block reveal">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/></svg>   
+          </div>
+          <div class="text-block"><strong>ATENCIÓN PERSONALIZADA<br></strong> +50 años atendido por sus dueños.</div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="div-block reveal">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>   
+          </div>
+          <div class="text-block"><strong>TODOS LOS MEDIOS DE PAGO</strong> y los mejores descuentos en efectivo!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section-12"></section>
+  <div class="section-4 productos1">
+    <div class="w-container">
+      <h1 class="heading-4">Frutas, Verduras y Hortalizas</h1>
+      <div class="text-block-3">
+        <p>En <strong>Rafael López SRL</strong> trabajamos todos los días en el corazón del Mercado de Abasto de Córdoba, Argentina. Desde allí abastecemos a verdulerías, almacenes, supermercados, gastronómicos y comercios de barrio con mercadería fresca, seleccionada y lista para llegar directo a tu local.</p>
+        <p>Nuestra propuesta es clara. Calidad, variedad y continuidad en el suministro. Del campo a tu negocio, sin vueltas.</p>
+        <h3>Variedad permanente</h3>
+        <p>En nuestro puesto comercializamos una amplia gama de frutas, verduras y hortalizas, entre ellas:</p>
+        <p>Rúcula, lechuguín, lechuga criolla, lechuga mantecosa, lechuga repollada, acelga, berenjena, zapallito, zapallo negro, anquito, cebolla, papa Hass, palta Hass, palta JLA, batata común, choclo, remolacha, apio, perejil, tomate perita, tomate perita chico, tomate redondo, tomate redondo chico.</p>
+        <p>También trabajamos frutas de alta rotación como naranja jugo, naranja ombligo, naranja Valencia, limón, bolsón de limón, ciruela Larry Ann, durazno Snow Giant, uva cereza, uva moscatel, uva Red Globe, uva Red Globe Horac, melón, maníes de vaina Virginia, pelón amarillo y otras variedades según disponibilidad.</p>
+        <h3>Productos de estación</h3>
+        <p>Acompañamos el calendario productivo argentino, incorporando frutas y verduras de estación para que tu negocio siempre tenga lo mejor en frescura, precio y presentación. Esto nos permite ofrecer mercadería con mejor rendimiento, mayor vida útil y excelente relación calidad precio.</p>
+        <h3>Compromiso con tu comercio</h3>
+        <p>Sabemos lo que implica sostener un punto de venta. Por eso en Rafael López SRL priorizamos:</p>
+        <ul>
+        <li>
+        <p>Selección y clasificación cuidadosa.</p>
+        </li>
+        <li>
+        <p>Abastecimiento constante.</p>
+        </li>
+        <li>
+        <p>Variedad para distintos segmentos de clientes.</p>
+        </li>
+        <li>El maní más importante y hasta Maní especial con chocolate que asegurará al Mejor Maní del Mundo en tu local</li>
+        <li>
+        <p>Atención personalizada en el Mercado de Abasto de Córdoba.</p>
+        </li>
+        </ul>
+        <p>Si buscás un proveedor confiable en frutas, verduras y hortalizas en Córdoba, estamos listos para acompañar tu crecimiento.</p>
+        <p>Rafael López SRL. Del campo a tu local, todos los días.</p>  
+      </div>
+    </div>
+  </div>
+  <section class="section-12"></section>
+  <div class="section-8 direccion">
+    <div class="w-container">
+      <h2 class="heading-4 direccion">¿Dónde estamos?</h2>
+      <div class="text-block-3">Nave 8 - Puesto 816/818<br>Mercado de Abasto<br>Av. de la Semilleria s/n, 5000 <br>Córdoba, Argentina</div>
+      
+ <section class="map">
+<a 
+  href="https://maps.app.goo.gl/F2ZAEjGYSvB84vQ57"
+  target="_blank"
+  rel="noopener"
+  aria-label="Cómo llegar a Rafael López en Google Mapas"
+>
+  <picture>
+    <source 
+      media="(max-width: 640px)" 
+      srcset="/images/como-llegar-rafael-lopez-mercado-abasto-450.webp"
+    >
+    <img
+      src="/images/como-llegar-rafael-lopez-mercado-abasto.webp"
+      alt="Ubicación de la empresa en Google Maps"
+      width="500"
+      height="500"
+      loading="lazy"
+      decoding="async"
+    >
+  </picture>
+</a>
+</section>
+      <h3 class="heading-2">Cómo llegar al Mercado de Abasto desde el Centro de Córdoba</h3>
+       <div>Si estás en el centro de la ciudad de Córdoba, te conviene ir hacia la Avenida 24 de Septiembre, doblas en Avenida Patria (a la izquierda), y subis hasta la calle Rincón (que está semaforizada). Tienes que doblar a la derecha en calle Rincón y le das todo derecho (se convertirá calle Rincón en calle Dr. Ricardo Balbín), continúas todo (derecho) por Dr. Ricardo Balbín y por la misma cruzas la Avenida de Circunvalación, seguís por calle Dr. Ricardo Balbín (que a estas alturas ya es Ruta 19) y vas a ver cartelería de Acceso al Mercado de Abasto, vas a salir a la derecha en un nudo de acceso hacia Avenida de La Semillería. Luego seguis por Avenida de la Semillería y a la derecha, vas a ver el Mercado de Abasto con su acceso principal.
+       </div>
+    <h3 class="heading-2">Cómo llegar a Rafael López</h3>
+       <div>Una vez que estamos dentro del Mercado de Abasto de Córdoba, continuamos por la calle principal de acceso, vamos a cruzar las naves A1 y A2 (que veremos de frente), y apenas cruzamos esos galpones (se les denomina Naves), doblamos a la derecha. La próxima Nave a nuestra derecha, será la Nave 8 (es un número grande con letras blancas) y debajo de ese número podrás apreciar los dos puestos juntos de nuestra firma: RAFAEL LOPEZ SRL
+<br /><br />Puedes ver <a href="https://maps.app.goo.gl/F2ZAEjGYSvB84vQ57" target="_blank" rel="noopener">la ubicación exacta de Rafael López SRL y cómo llegar en Google Maps</a>.
+    </div>
+    </div>
+  </div>
+
+</main>
+
+<footer role="contentinfo">
+   
+  <div class="section-9">
+    <div class="w-container">
+      <div class="w-embed">
+        <a style="color:#fff; text-decoration:none;">© 2026 Rafael López S.R.L. | ventas@rlopezsrl.com | Todos los derechos reservados.</a>
+      </div>
+    </div>
+     <!-- Botón de WhatsApp -->
+<a href="https://wa.me/543512600009?text=Hola%20Rafael%20López..."
+   target="_blank"
+   title="Mensaje Whatsapp a Rafael López SRL"
+   class="whatsapp-btn">
+
+    <svg class="whatsapp-icon"
+         xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 640 640">
+        <path fill="currentColor" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
+    </svg>
+</a>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Animaciones solo si el usuario NO pidió reducir movimiento
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".reveal").forEach(el => {
+      observer.observe(el);
+    });
+  }
+
+  // Evento botón WhatsApp
+  document.getElementById("btn-wa").addEventListener("click", ok);
+
+});
+
+function ok() {
+  var nombre = document.getElementById('Nombre').value;
+  var telefono = document.getElementById('Telefono-3').value;
+  var negocio = document.getElementById('Negocio').value;
+  var consulta = document.getElementById('Consulta').value;
+
+  var waStr = `Hola, soy *${nombre}*.\n\n` +
+              `*Celular:* ${telefono}\n\n` +
+              `*Tipo de negocio:* ${negocio}\n\n` +
+              `*Consulta:* ${consulta}`;
+
+  var mensaje = "https://wa.me/5493512600009?text=" + encodeURIComponent(waStr);
+
+  window.open(mensaje);
+}
+</script>
+
+
+</body>
+</html>
