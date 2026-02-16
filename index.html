@@ -167,9 +167,17 @@ header {
    "currenciesAccepted": "ARS, USD",
    "paymentAccepted":"Cash, Credit Card",
    "contactPoint": {
-     "@type": "ContactPoint",
-     "telephone": "+543512600009",
-     "email": "ventas@rlopezsrl.com"
+      "@type": "ContactPoint",
+      "telephone": "+543512600009",
+      "email": "ventas@rlopezsrl.com",
+      "contactType": "Atención al cliente",
+      "availableLanguage": ["Spanish"],
+      "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+         "opens": "00:00",
+         "closes": "23:59"
+      }
    },
    "address": {
       "@type": "PostalAddress",
@@ -240,7 +248,7 @@ header {
       </label>
    
      <ul class="nav-links">
-       <li><a href="/">Frutas y Verduras</a></li>
+       <li><a href="/frutas-verduras/">Frutas y Verduras</a></li>
        <li><a href="/aceites-oliva/">Aceites de Oliva</a></li>
        <li><a href="/snacks-mani/">Snacks: Maní</a></li>
      </ul>
